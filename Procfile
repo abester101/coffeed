@@ -1,1 +1,1 @@
-web: gunicorn coffeed.wsgi --log-file -   
+web: python coffeed/manage.py runserver 0.0.0.0:$PORT --noreload
